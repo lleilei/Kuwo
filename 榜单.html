@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<div id="top" kw_ver="1.0.0">
+	        <!--<input type="hidden" id="REQ_ID" name="reqId">
+	        <input type="hidden" id="PROFILE_ID" name="profileId" >-->
+	      <div class="top">
+		        <a class="logo" href="##"><img src="img/logo.jpg" alt="logo" /></a>
+		    <ul class="nav" style="padding-left: 0px; margin-top: 0px;">
+			    <li><a href="index1.html">首页</a></li>
+			    <li><a class="active" href="#">榜单</a></li>
+			    <li><a href="index3.html">歌手</a></li>
+			    <li><a target="_blank" href="##">下载酷我客户端</a></li>
+		    </ul>
+		    <div class="tools">
+			    <div class="search">
+				    <input type="text" name="search" placeholder="找到好音乐" />
+				    <a class="searchBtn" href="javascript:;"></a>
+				    <div class="searchInfo">
+					    <ul class="songL">
+						    <li ms-repeat="songArr"><a target="_blank"
+							ms-attr-href="http://www.kuwo.cn/yinyue/{{el.id}}/">
+								<span ms-attr-title="{{el.NAME}}" class="albName">{{el.NAME}}</span>
+								<span ms-attr-title="{{el.ARTIST}}">{{el.ARTIST}}</span>
+						    </a></li>
+					    </ul>
+				    </div>
+			    </div>
+			    <div class="userBox">
+				    <a id="loginBtn" href="javascript:;">登录</a>
+				    <a id="userName" href="javascript:;"></a>
+				    <div class="loginMenu">
+					    <a href="javascript:;" class="kwLogin"><i></i>酷我账号登录</a>
+					    <a href="javascript:;" class="wbLogin"><i></i>新浪微博登录</a>
+					    <a href="javascript:;" class="qqLogin"><i></i>QQ账号登录</a>
+				    </div>
+			    </div>
+			    <div class="more">
+				    <p>更多服务</p>
+				    <ul>
+					    <li><a target="_blank" href="#">腾讯音乐人</a></li>
+						<li><a target="_blank"  href="##">HiFi音乐</a></li>
+					    <li class="anchorVideo"><a target="_blank" href="##">酷我视频</a></li>
+					    <li><a target="_blank" href="##">游戏</a></li>
+			    </div>
+			    <ul class="choose opacity80">
+				    <li class="show"><a target="_blank" onclick="picLog('www2016_2_xiu')" href="##">美女秀</a></li>
+				    <li class="earphone"><a target="_blank" onclick="picLog('www2016_2_erji')" href="##">酷我耳机</a></li>
+				    <li class="vip"><a target="_blank" onclick="picLog('www2016_2_vip')" href="##">VIP会员</a></li>
+				    <li class="book"><a target="_blank" onclick="picLog('www2016_2_tingshu')" href="#">i听</a></li>
+			    </ul>
+		    </div>
+	    </div>
+    </div>
+    
+    
+    
+    <!-- 音乐播放器 -->
+	
+
+<!-- 播放器开始 -->
+	<div id="player">
+		<div class="playerSplice opacity95"></div>
+		<div id="playerBox">
+			<div class="player">
+				<!--<div class="open" class="opacity95"></div> -->
+				<div class="open lock" class="opacity95"></div>
+				<div class="playerLeft">
+					<div class="musicControll">
+						<div class="prev" id="wp_playPreBtn" title="上一首"></div>
+						<div class="play" id="wp_playBtn" title="暂停/播放"></div>
+						<div class="next" id="wp_playNextBtn" title="下一首"></div>
+					</div>
+					<img id="artist_Image" src="img/50-50.jpg" onerror="imgOnError(this,'50')" />
+				</div>
+				<div class="playerMid">
+					<p id="wp_text">好音质 用酷我</p>
+					<div id="prograssBar">
+						<div id="wp_bufBar">
+							<div class="prograssBar" id="wp_processBar"></div>
+							<a href="javascript:;" class="schedule_btn" id="wp_processBtn" style="left: 0"></a>
+						</div>
+					</div>
+				</div>
+				<div class="playerRight">
+					<p id="wp_playTime" class="opacity">00:00</p>
+					<div id="pinzhi">
+						<a class="changePz" href="javascript:down('bang');">流畅</a>
+					</div>
+					<div id="controllBtn">
+						<div class="sound" id="wp_mute">
+							<div id="soundBox">
+								<div class="soundBox">
+									<div id="soundPro">
+										<div class="soundPro" id="wp_volBar"></div>
+										<a href="javascript:;" id="wp_volBtn"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="loop" id="mode" href="javascript:;" title="顺序循环"></a>
+						<a class="kSong" title="k歌" onclick="picLog('www2016_2_kge')" target="_blank" href="##"></a>
+						<div class="menu" title="列表"></div>
+						<a class="down click_log" data-click="bang_player_bar" title="下载" href="##"></a>
+						<div class="share" title="分享">
+							<div class="shareBox">
+								<div class="sharecontent">
+									<a href="javascript:;" class="quickShare new_sina" data-cmd="tsina" title="分享到新浪微博"></a>
+									<a href="javascript:;" class="quickShare new_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+									<a href="javascript:;" class="quickShare new_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+									<a href="javascript:;" class="quickShare new_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+									<a href="javascript:;" class="quickShare new_renren" data-cmd="renren" title="分享到人人网"></a>
+								</div>
+							</div>
+						</div>
+						<div class="ewm" title="二维码">
+							<div class="ewmBox">
+								<div class="ewmCon">
+									<img width="144" src="img/ewm.png" />
+								</div>
+							</div>
+						</div>
+						<div id="addTips">
+							<p>已添加至播放列表</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 播放列表开始 -->
+			<div id="playList">
+				<div id="playListBox">
+					<div class="splice opacity90"></div>
+					<div id="playCon">
+						<!-- 歌词 -->
+						<div id="lrc">
+							<div class="splice"></div>
+							<p id="lrcName">好音质 用酷我</p>
+							<div id="lrcConId"></div>
+						</div>
+						<!-- 列表 -->
+						<div id="musicList">
+							<div class="splice opacity30"></div>
+							<div class="listNum">
+								<p>播放列表({{model.playList.length}})</p>
+								<span title="关闭"></span>
+							</div>
+							<ul class="musicList scrollbar">
+								<li ms-repeat="playList" ms-attr-id="pl{{el.rid}}" ms-attr-data-pay="{{el.pay}}">
+									<div class="musicInfo">
+										<div class="name"><a ms-attr-href="javascript:wb_playSong('{{el.rid}}','{{el.name}}','{{el.art}}','{{el.pay}}');" ms-attr-title="{{el.name}}">{{el.name}}</a></div>
+										<div class="album" ms-attr-title="{{el.album}}">{{el.album}}</div>
+										<div class="artist" ms-attr-title="{{el.art}}">{{el.art}}</div>
+									</div>
+									<div class="listRight">
+										<div class="musicTools">
+											<a class="down click_log" data-click="bang_player_listen" title="下载" href="##"></a>
+											<div class="share" title="分享">
+												<div class="shareBox">
+													<div class="sharecontent">
+														<a href="javascript:;" class="quickShare new_sina" data-cmd="tsina" title="分享到新浪微博"></a>
+														<a href="javascript:;" class="quickShare new_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+														<a href="javascript:;" class="quickShare new_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+														<a href="javascript:;" class="quickShare new_douban" data-cmd="douban" title="分享到豆瓣网"></a>
+														<a href="javascript:;" class="quickShare new_renren" data-cmd="renren" title="分享到人人网"></a>
+													</div>
+												</div>
+											</div>
+											<a class="ksong" title="k歌" onclick="picLog('www2016_2_kge')" target="_blank" href="##"></a>
+											<a title="删除" class="delete" ms-attr-href="javascript:delPlSong('{{el.rid}}');" ms-click="$remove"></a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="border opacity40"></div>
+						<!-- 列表结束 -->
+					</div>
+				</div>
+			</div>
+			<!-- 播放列表结束 -->
+			
+	    </div>
+	</div>
+
+
+	</body>
+</html>
