@@ -150,3 +150,12 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     margin: 17px 4px 0 0;
     background: url(http://image.kuwo.cn/website/pc/bang/icon.png) no-repeat -15px 0;
 }
+
+
+
+.checkBoxLogin.checked {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(http://www.kuwo.cn/static/image/web/homePage/ugc/checkedBoxBg.jpg);
+}

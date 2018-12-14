@@ -18,6 +18,8 @@ $(".userBox").mouseover(function(){
 	})
 })
 
+
+
 $(".share").mouseover(function(){
 	$(this).children(".shareBox").css({
 		"display":"block"
@@ -43,6 +45,7 @@ $(".bang h2").click(function(){
 		}
 		return false;
 	});
+
 
 
 
