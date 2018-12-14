@@ -1,0 +1,397 @@
+body{
+	line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	min-width: 1200px;
+	position: relative;
+}
+#top{
+	height: 50px;
+	background: #181818;
+}
+#top .top{
+	width: 1200px;
+	margin: 0 auto;
+	height: 50px;
+}
+#top .top .logo{
+	float: left;
+	display: block;
+	height: 50px;
+	width: 106px;
+}
+#top .top .nav{
+	float: left;
+	height: 50px;
+}
+#top .top .nav li{
+	float: left;
+	font-size: 18px;
+	margin: 11px 0 0 40px;
+	display: inline;
+}
+#top .top .nav li a.active{
+	color: #feca2e;
+}
+#top .top .nav li a{
+	color: #fff;
+}
+#top .top .tools{
+	float: right;
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+}
+#top .top .tools .search{
+	float: right;
+	width: 181px;
+	height: 25px;
+	line-height: 25px;
+	background: url(../img/searchBoxBg.png);
+	margin: 13px 0 0 10px;
+	position: relative;
+	z-index: 2;
+	display: inline;
+}
+#top .top .tools .search input{
+	float: left;
+	width: 141px;
+	height: 25px;
+	color: #999;
+	padding-left: 10px;
+	font-size: 12px;
+	line-height: 25px;
+	background: 0;
+}
+#top .top .tools .search a.searchBtn{
+	float: right;
+	width: 30px;
+	height: 25px;
+	display: block;
+}
+#top .top .tools a{
+	color: #fff;
+	line-height: 50px;
+}
+.searchInfo{
+	position: absolute;
+	top: 37px;
+	left: -9px;
+	width: 200px;
+	height: auto;
+	background:url(../img/searchBg.png) no-repeat;
+	font-size: 12px;
+	display: none;
+}
+.searchInfo ul{
+	padding: 5px 0;
+}
+#top .top .tools .userBox{
+	float: right;
+	margin-left: 13px;
+	width: 67px;
+	height: 50px;
+	position: relative;
+	z-index: 2;
+	background: url(../img/loginDown.png) no-repeat right center;
+}
+#top .top .tools .userBox:hover{
+	background: url(../img/loginUp.png) no-repeat right center;
+}
+#top .top .tools .userBox #userName, #loginBtn{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	width: 56px;
+}
+.loginMenu{
+	padding: 0 19px;
+	background: url(../img/moreBg.png);
+	position: absolute;
+	top: 50px;
+	left: -3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.loginMenu a{
+	width: 120px;
+	height: 50px;
+	display: block;
+	border-bottom: 1px solid rgba(255,255,0,0.05);
+}
+.loginMenu i{
+	float: left;
+	background: url(../img/loginIcon.png);
+	width: 23px;
+	height: 23px;
+	margin: 15px 5px 0 0;
+}
+.loginMenu .kwLogin i{
+	background-position: -133px -10px;
+}
+.loginMenu .wbLogin i{
+	background-position: -189px -10px;
+	margin-top: 17px;
+}
+.loginMenu .qqLogin i{
+	background-position: -47px -10px;
+	margin-top: 17px;
+}
+#top .top .tools .more{
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+#top .top .tools .more p{
+	cursor: pointer;
+	color: #fff;
+}
+#top .top .tools .more ul{
+	position: absolute;
+	top: 50px;
+	left: -23px;
+	width: 110px;
+	background: url(../img/moreBg.png);
+	font-size: 12px;
+	padding-top: 4px;
+}
+#top .top .tools .more ul li{
+	height: 30px;
+	line-height: 30px;
+	text-indent: 23px;
+}
+#top .top .tools .more ul li a{
+	display: block;
+	color: #D6D6D6;
+	line-height: 30px;
+}
+#top .top .tools ul.choose{
+	float: right;
+}
+#top .top .tools ul.choose li{
+	float: left;
+	margin-right: 20px;
+}
+#top .top .tools ul.choose .show a{
+	background-position: -230px -23px;
+	padding-left:20px ;
+}
+#top .top .tools ul.choose li a{
+	background: url(../img/icon.png) no-repeat;
+}
+#top .top .tools ul.choose .earphone a{
+	background: url(../img/earphone.png) left center no-repeat;
+	padding-left: 20px;
+}
+#top .top .tools ul.choose .vip a{
+	background: url(../img/1478593200456_.png) left center no-repeat;
+	padding-left:20px ;
+}
+#top .top .tools ul.choose .book a{
+	background-position: -105px -23px;
+	padding-left: 20px;
+}
+
+.loginShadow{
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000;
+	width:100% ;
+	opacity: 3;
+	z-index: 3;
+}
+.login{
+	width: 590px;
+	display: none;
+}
+.ugcBox{
+	background: #fafafa ;
+	padding-bottom:40px ;
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: -289px;
+	z-index: 3;
+}
+.boxShadow{
+	box-shadow: rgba(34,31,26,27);
+}
+.login .topBox{
+	width: 550px;
+	margin-bottom: 20px;
+}
+.topBox{
+	margin: 0 0 28px 20px;
+	height: 56px;
+	line-height: 56px;
+	border-bottom: 1px solid #eeeeee;
+}
+.topBox h1{
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+}
+.closeWindow{
+	float: right;
+	width: 12px;
+	height: 12px;
+	margin-top: 20px;
+	background: url(../img/close.png);
+}
+.login .left{
+	float: left;
+	width: 300px;
+	border-right: 1px solid #ddd;
+	margin-left: 20px;
+	display: inline;
+}
+.login .lable{
+	float: left;
+	margin: 0 0 20px 17px;
+	font-size: 14px;
+	color: #333;
+}
+.login .left input{
+	margin: 0 0 15px 10px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 16px;
+	background: #fff;
+}
+.intInput{
+	float: left;
+	width: 230px;
+}
+.radius{
+	border-radius: 3px;
+	border: 1px solid #ddddddd;
+	padding: 0 9px;
+}
+.login .left input .verifyCode{
+	width: 95px;
+	float: left;
+	margin-right: 17px;
+}
+.login .left .verifyImg{
+	float: left;
+}
+.leftLine{
+	float: left;
+	width: 260px;
+	margin-left: 10px;
+	color: #666666;
+	font-size: 14px;
+}
+.checkBoxLogin .checked{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../img/checkedBoxBg.jpg);
+}
+.checkBoxLogin{
+	cursor: pointer;
+	margin: 3px 10px 0 0;
+}
+.autoLogin{
+	float: left;
+}
+.login .zc_bot{
+	float: left;
+	margin: 0 0 0 13px;
+	line-height: 41px;
+}
+.login .left .command{
+	float: left;
+	margin: 2px 10px 0 0;
+}
+.login .left input{
+	height: 38px;
+	line-height: 38px;
+	font-size: 16px;
+	background: #fff;
+}
+.login .zc_bot a{
+	color: #46b4e6;
+}
+.left .sureUp{
+	margin: 10px 0 10px 10px;
+}
+.sureUp{
+	float: left;
+	width: 260px;
+	height: 40px;
+	line-height: 40px;
+	background: #f0aa00;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+}
+.login .noNum{
+	float: left;
+	text-indent: 129px;
+}
+.login .right{
+	float: left;
+	width: 230px;
+}
+.login .right .lable{
+	margin-left: 37px;
+}
+.login .right span{
+	float: left;
+	cursor: pointer;
+}
+.login .lable{
+	margin: 0 0 20px 17px;
+	font-size: 14px;
+	color: #333;
+}
+.login .right a{
+	float: left;
+	width: 200px;
+	height: 40px;
+	background: #fff;
+	border: 1px solid #ddd;
+	line-height: 40px;
+	text-align: center;
+	color: #333;
+	font-size: 16px;
+	margin: 0 0 20px 30px;
+}
+.login .wbLogin i{
+	background: url(../img/wbIcon.jpg);
+	margin: 12px 10px 0 37px;
+}
+.login .right i{
+	float: left;
+	width: 18px;
+	height: 15px;
+}
+.login .right span{
+	float: left;
+	cursor: pointer;
+}
+.login .qqLogin i{
+	background: url(../img/qqIcon.jpg) no-repeat;
+	margin: 13px 10px 0 58px;
+}
+.login .right i{
+	float: left;
+	width: 18px;
+	height: 15px;
+}
+.radius20{
+	border-radius: 20px;
+}
+:link{
+	text-decoration: none;
+}
+a{
+	color: #fff;
+}
+

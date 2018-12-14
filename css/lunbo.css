@@ -1,0 +1,145 @@
+#banner .small{
+	height: 600px;
+}
+a{
+	color: #fff;
+}
+#banner{
+	height: 750px;
+	position: relative;
+	overflow: hidden;
+}
+#banner #tabLeft{
+	left: 0;
+}
+#banner #tabRight{
+	right: 0;
+}
+#banner #tabLeft, #banner .tabRight{
+	display: none;
+	position: absolute;
+	top: 200px;
+	width: 80px;
+	height: 220px;
+	cursor: pointer;
+	background: url(../img/leftright.png);
+	z-index: 1000;
+}
+#tabLeft span{
+	background: url(../img/left40.png);
+}
+#tabLeft span, #tabRight span{
+	display: block;
+	width: 24px;
+	height: 40px;
+	margin: 90px 0 0 28px;
+}
+#tabRight span{
+	background: url(../img/right40.png);
+}
+#banner ul{
+	position: absolute;
+}
+#banner ul li{
+	float: left;
+	position: relative;
+	cursor: pointer;
+}
+#banner .small ul li img.bannerItem{
+	width: 1366px;
+	height: 600px;
+}
+#banner ul li img{
+	position: relative;
+	left: 0;
+	width: 1920px;
+	height: 750px;
+}
+#banner ul li .splice{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bannerConBox{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.bannerCon{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 50%;
+}
+#banner.small .bannerCon h1{
+	font-size: 48px;
+	margin-top: 30px;
+}
+.bannerCon h1{
+	font-size: 60px;
+	font-weight: 500;
+	margin-top: 80px;
+}
+#banner.small .bannerCon p{
+	margin-top: 0;
+}
+.bannerCon p{
+	font-size: 36px;
+	margin-top: 5px;
+}
+#banner.small .other .bannerDown{
+	margin-top: 291px;
+}
+#banner.small .bannerDown{
+	margin-top: 25px;
+}
+.other .bannerDown{
+	margin-top: 296px;
+}
+.bannerCon .albumDown{
+	margin-top: 30px;
+}
+.bannerDown{
+	float: left;
+	display: block;
+	width: 300px;
+	height: 80px;
+	background: url(../img/bannerDown.png);
+	margin: 66px 0 0 446px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 34px;
+	display: inline;
+}
+#banner.small #point{
+	top: 560px;
+}
+#banner #point{
+	position: absolute;
+	width: 100%;
+	top: 680px;
+	display: none;
+}
+#banner #point .point{
+	margin: 0 auto;
+	overflow: hidden;
+}
+#banner #point .point .pointBox{
+	width: auto;
+}
+#banner #point .point .pointBox a{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: url(../img/icon.png) -105px -45px;
+	margin-right: 20px;
+}
+#banner #point .point .pointBox a.active{
+	background-position: -127px -45px;
+}
