@@ -28,23 +28,21 @@ $(".share").mouseover(function(){
 	})
 })
 
+//$(".bang").click(function(){
+//	if($(".bang ul").css({"style","display:none"})){
+//		$(this).css({"style","display:block"})
+//	}
+//})
 
-var classNode=document.getElementsByClassName("bang");
-var leftNav=document.getElementById("leftNav");
-var ulList=leftNav.getElementsByTagName("ul");
-
-for(var i=0;i<classNode.length;i++){
-	classNode[i].onclick=function(){
-		for(var m=0;m<ulList.length;m++){
-			if(m==this.getAttribute("title")){
-				ulList[m].style.display="block";
-			}
-			else{
-				ulList[m].style.display="none";
-			}
+$(".bang h2").click(function(){
+		var flag = eval($(this).attr("data-flag"));
+		if(!flag){
+			$(this).addClass('down').attr("data-flag",true).next().show();
+		}else{
+			$(this).removeClass('down').attr("data-flag",false).next().hide();
 		}
-	}
-}
+		return false;
+	});
 
 
 

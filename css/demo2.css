@@ -52,53 +52,20 @@
 	width: 280px;
     height: 60px;
 }
-.musicControll{
-	float: left;
-	margin-left: 24px;
-	display: inline;
-}
 
-.musicControll .prev, .musicControll .next, .musicControll .play, .musicControll .zan{
-	width: 30px;
-	height: 30px;
-	background: url(../img/icon.png);
-}
-.musicControll div{
-	float: left;
-	margin: 10px 0 0 17px;
-	cursor: pointer;
-	display: inline;
-}
-.musicControll .prev{
-	background-position: -77px -118px;
-	margin-top: 15px;
-}
-.musicControll .prev:hover{
-	background-position: -77px -157px;
-}
-.musicControll .pas{
-	width: 40px;
-	height: 40px;
-	background-position: -137px -113px;
-}
-.musicControll .pas:hover{
-	background-position: -137px -153px;
-}
-.musicControll .plp{
-	width: 40px;
-	height: 40px;
-	background-position: -138px -194px;
-}
-.musicControll .plp:hover{
-	background-position: -179px -194px;
-}
-.musicControll .next{
-	background-position: -207px -118px;
-	margin-top: 15px;
-}
-.musicControll .next:hover{
-	background-position: -207px -158px;
-}
+
+.musicControll {float:left;margin-left:24px;display: inline;}
+.musicControll div {float:left;margin:10px 0 0 17px;cursor:pointer;display: inline;}
+.musicControll .prev,.musicControll .next,.musicControll .play,.musicControll .zan {width:30px;height:30px;background:url(http://image.kuwo.cn/website/pc/icon.png);}
+.musicControll .prev {background-position: -77px -118px;margin-top:15px;}
+.musicControll .play {width:40px;height:40px;background-position: -137px -113px}
+.musicControll .zan {width:40px;height:40px;background-position: -138px -194px}
+.musicControll .next {background-position: -207px -118px;margin-top:15px;}
+.musicControll .prev:hover {background-position: -77px -157px;}
+.musicControll .play:hover {background-position: -137px -153px;}
+.musicControll .zan:hover {background-position: -179px -194px}
+.musicControll .next:hover {background-position: -207px -158px;}
+
 .playerLeft img{
 	float: left;
 	width: 40px;

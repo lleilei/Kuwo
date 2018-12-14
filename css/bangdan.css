@@ -124,3 +124,29 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 .musicControll .next:hover {background-position: -207px -158px;}
 /*图标*/
 .playerLeft img {float:left;width:40px;height:40px;margin:10px 0 0 50px;display: inline;}
+
+/*音乐上升下降图标*/
+.rightContentBox .leftInfo .mTrend .u0 {
+    width: 10px;
+    height: 11px;
+    margin: 14px 4px 0 0;
+    background: url(http://image.kuwo.cn/website/pc/bang/icon.png) no-repeat 0 0;
+}
+.rightContentBox .leftInfo .mTrend .e0 {
+    width: 10px;
+    height: 2px;
+    margin: 19px 4px 0 0;
+    background: url(http://image.kuwo.cn/website/pc/bang/icon.png) no-repeat -57px 0;
+}
+.rightContentBox .leftInfo .mTrend .d0 {
+    width: 10px;
+    height: 11px;
+    margin: 14px 4px 0 0;
+    background: url(http://image.kuwo.cn/website/pc/bang/icon.png) no-repeat -42px 0;
+}
+.rightContentBox .leftInfo .mTrend .n0 {
+    width: 22px;
+    height: 7px;
+    margin: 17px 4px 0 0;
+    background: url(http://image.kuwo.cn/website/pc/bang/icon.png) no-repeat -15px 0;
+}
