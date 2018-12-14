@@ -30,11 +30,6 @@ $(".share").mouseover(function(){
 	})
 })
 
-//$(".bang").click(function(){
-//	if($(".bang ul").css({"style","display:none"})){
-//		$(this).css({"style","display:block"})
-//	}
-//})
 
 $(".bang h2").click(function(){
 		var flag = eval($(this).attr("data-flag"));
