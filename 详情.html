@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/demo.css" />
+		<link rel="stylesheet" href="css/demo3.css" />
+		<link rel="stylesheet" href="css/demo4.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/singles.css" />
+	</head>
+	<body avalonctrl="player">
+		<div id="top" ku_ver="1.0.0">
+			<input type="hidden" id="REQ_ID" name="reqId" value="" />
+			<input type="hidden" id="PROFILE_ID" name="profileId" value="site"/>
+			<div class="top">
+				<a class="logo" href="http://www.kuwo.cn/">
+					<img src="img/logo.jpg" alt="logo"/>
+				</a>
+				<ul class="nav">
+					<li>
+						<a class="active" href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="榜单.html">榜单</a>
+					</li>
+					<li>
+						<a href="http://www.kuwo.cn/artist/index">歌手</a>
+					</li>
+					<li>
+						<a target="_blank" href="##">下载酷我客户端</a>
+					</li>
+				</ul>
+				<div class="tools">
+					<div class="search">
+						<input type="text" name="search" placeholder="找到好音乐" />
+						<a class="searchBtn" href="javascript:;"></a>
+						<div class="searchInfo" style="display: none;">
+							<ul class="songL">
+								
+							</ul>
+						</div>
+					</div>
+					<div class="userBox" id="userBox">
+						<a id="loginBtn" href="javascript:;" style="display: block;">登录</a>
+						<a id="userName" href="javascript:;" title style="display: block;"></a>
+						<div class="loginMenu" id="loginMenu" style="display: none;">
+							<a href="javascript:;" class="kwLogin">
+								<i></i>
+								酷我账号登录
+							</a>
+							<a href="javascript:;" class="wbLogin">
+								<i></i>
+								微博账号登录
+							</a>
+							<a href="javascript:;" class="qqLogin">
+								<i></i>
+								QQ账号登录
+							</a>
+						</div>
+					</div>
+					<div class="more" id="more">
+						<p>更多服务</p>
+						<ul style="height: 160px;display: none;">
+							<li>
+								<a target="_blank" href="https://y.tencentmusic.com/#/">腾讯音乐人</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://www.kuwo.cn/web/cdpack/index">HiFi音乐</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://www.kuwo.cn/web/cdpack/index" class="anchorRadio">主播电台</a>
+							</li>
+							<li class="anchorVideo">
+								<a target="_blank" href="http://www.kuwo.cn/static/page/ugcVideo/kwVideoIndex.html">酷我视频</a>
+							</li>
+							<li>
+								<a target="_blank" href="http://game.kuwo.cn/">游戏</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="choose opacity80">
+						<li class="show">
+							<a target="_blank" onclick="picLog" href="http://jx.kuwo.cn/665285?from=1001008053&optimize=1&uid=444758875&cid=&lastshowtime=">美女秀</a>
+						</li>
+						<li class="earphone">
+							<a target="_blank" onclick="picLog" href="https://detail.tmall.com/item.htm?id=522001391451">酷我耳机</a>
+						</li>
+						<li class="vip">
+							<a target="_blank" onclick="picLog" href="http://vip1.kuwo.cn/vip/added/vip_2016/index.jsp?from=1">VIP会员</a>
+						</li>
+						<li class="book">
+							<a target="_blank" onclick="picLog" href="http://tingshu.kuwo.cn/">i听</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="loginBox" id="loginBox">
+			<div class="loginShadow" style="display: none;"></div>
+			<div class="ugcBox login boxShadow" style="margin-top: -200px;display: none;">
+				<div class="topBox">
+					<h1>登录</h1>
+					<a href="javascript:;" class="closeWindow"></a>
+				</div>
+				<form id="loginForm" action="" method="post">
+					<input type="hidden" name="retUrl" value="" />
+					<input type="hidden" name="keepLogin" value="0" />
+					<input type="hidden" name="verifyCodeKey" value="" />
+					<div class="left">
+						<span class="lable">酷我账号登录</span>
+						<input placeholder="酷我账号" type="text" name="uname" class="number intInput radius" />
+						<input placeholder="密码" type="password" name="password" class="pwd intInput radius" autocomplete="off"/>
+						<input placeholder="验证码" type="text" name="verifyCode" class="verifyCode intInput radius" />
+						<img id="verifyImg" class="verifyImg" src />
+						<div class="leftLine">
+							<span class="checkBoxLogin checked"></span>
+							<span class="autoLogin">自动登录</span>
+						</div>
+						<div class="zc_bot">
+							<input name class="command" type="checkBox" checked="checked" value/>
+							<label>
+								"同意"
+								<a href="http://www.kuwo.cn/static/page/license/license.html" target="_blank">《酷我音乐用户服务协议》</a>
+								<a href="http://www.kuwo.cn/static/page/license/license_privacy.html" target="_blank">《隐私政策》</a>
+							</label>
+						</div>
+						<a href="" class="sureUp radius20">登录</a>
+						<div class="noNum"></div>
+					</div>
+				</form>
+				<div class="right">
+					<span class="lable">第三方账号登录</span>
+					<a class="wbLogin radius20" href="javascript:;">
+						<i></i>
+						<span>新浪微博登录</span>
+					</a>
+					<a class="qqLogin radius20" href="javascript:;">
+						<i></i>
+						<span>QQ登录</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--<input type="hidden" id="SYS_MAIN_HOST" value="" />
+		<input type="hidden" id="SYS_PAGE_STAT" value="200" />
+		<input type="hidden" id="SYS_FP" value="" />
+		<input type="hidden" id="SYS_NP" value="" />-->
+		
+		
+		<div id="musicCon">
+			<div class="music">
+				<div id="musiclrc">
+					<p id="lrcName">我们的明天（Single Version 电影《重返20岁》主题曲）</p>
+					<div class="info">
+						<p class="album">专辑：</p>
+						<p class="artist">我们的明天（鹿晗版）</p>
+						<div class="singleShareBox">
+							<a class="share">分享</a>
+							<div class="singleShareContent" style="display: none;">
+								<a class="quickShare new_sina" title="分享到新浪微博"></a>
+								<a class="quickShare new_qzone" title="分享到QQ空间"></a>
+								<a class="quickShare new_tqq" title="分享到腾讯微博"></a>
+								<a class="quickShare new_douban" title="分享到豆瓣网"></a>
+								<a class="quickShare new_renren" title="分享到人人网"></a>
+							</div>
+						</div>
+						<a class="goComment">评论</a>
+					</div>
+					<div id="lrcContent" class="scrollbar" style="position: relative;">
+						<div id="llrcArea">
+							<div id="lrcId" style="overflow-x: hidden;overflow-y: hidden;">
+								<p id="lId1" class="lrcItem">作词：于京乐团 作曲：于京乐团</p>
+								<p id="lId2" class="lrcItem">一个人走到终点</p>
+								<p id="lId3" class="lrcItem">不小心回到起点</p>
+								<p id="lId4" class="lrcItem">一个新的世界</p>
+								<p id="lId5" class="lrcItem">此刻我才发现</p>
+								<p id="lId6" class="lrcItem">时间没有绝对</p>
+								<p id="lId7" class="lrcItem">直到有另一个人</p>
+								<p id="lId8" class="lrcItem">能体会我的感觉</p>
+								<p id="lId9" class="lrcItem">不用说不用问</p>
+								<p id="lId10" class="lrcItem">就明白就了解</p>
+								<p id="lId11" class="lrcItem">每一刻都像永远</p>
+								<p id="lId12" class="lrcItem">我看着 没剩多少时间</p>
+								<p id="lId13" class="lrcItem">能许愿 好想多一天</p>
+								<p id="lId14" class="lrcItem">我们的明天</p>
+								<p id="lId15" class="lrcItem">我问着 还有多少时间</p>
+								<p id="lId16" class="lrcItem">在眼前 以为多一天</p>
+								<p id="lId17" class="lrcItem">能实现我们的预言</p>
+								<p id="lId18" class="lrcItem">直到有另一个人</p>
+								<p id="lId19" class="lrcItem">能体会我的感觉</p>
+								<p id="lId20" class="lrcItem">不用说不用问</p>
+								<p id="lId21" class="lrcItem">就明白就了解</p>
+								<p id="lId22" class="lrcItem">每一刻都像永远</p>
+								<p id="lId23" class="lrcItem">我看着 没剩多少时间</p>
+								<p id="lId24" class="lrcItem">能许愿 好想多一天</p>
+								<p id="lId25" class="lrcItem">我们的明天</p>
+								<p id="lId26" class="lrcItem">我问着 还有多少时间</p>
+								<p id="lId27" class="lrcItem">在眼前 以为多一天</p>
+								<p id="lId28" class="lrcItem">能实现我们的预言</p>
+								<p id="lId29" class="lrcItem">其实有个传说</p>
+								<p id="lId30" class="lrcItem">能将时空倒流</p>
+								<p id="lId31" class="lrcItem">因为有一个梦告诉我</p>
+								<p id="lId32" class="lrcItem">爱从不曾保留</p>
+								<p id="lId33" class="lrcItem">才勇敢了我</p>
+								<p id="lId34" class="lrcItem">我看着 没剩多少时间</p>
+								<p id="lId35" class="lrcItem">能许愿 好想多一天</p>
+								<p id="lId36" class="lrcItem">我们的明天</p>
+								<p id="lId37" class="lrcItem">我问着 还有多少时间</p>
+								<p id="lId38" class="lrcItem">在眼前 以为多一天</p>
+								<p id="lId39" class="lrcItem">能实现我们的预言</p>
+								<p id="lId40" class="lrcItem">累积成永恒的纪念</p>
+							</div>
+						</div>
+						<div id="bar_box">
+							<div id="bar"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="playerBox">
+				<div class="musicPic">
+					<a href="##">
+						<img class="photoPic" src="img/3021002560.jpg" />
+						<span class="splice"></span>
+					</a>
+				</div>
+				<div class="play" id="wp_playBtn" title="暂停/播放"></div>
+				<div class="playerMid">
+					<div id="prograssBar" class="borderRadius">
+						<div id="wp_bufBar" class="borderRadius">
+							<div class="prograssBar borderRadius" id="wp_processBar"></div>
+							<a class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>
+						</div>
+					</div>
+				</div>
+				<p id="wp_playTime" class="wp_playerTime_singles">03:52</p>
+				<div class="sound" id="wp_mute"></div>
+				<div id="soundBox">
+					<div class="soundBox">
+						<div id="soundPro">
+							<div class="soundPro" id="wp_volBar" style="height: 50%;"></div>
+							<a id="wp_volBtn" style="top: 34.5px;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="down">
+					<a id="singlesDownBtn" class="click_log">
+						<span class="icon"></span>
+						<span>免费下载这首歌</span>
+					</a>
+					<div class="tips">
+						<span class="jiao"></span>
+						<p>
+							<span>该歌曲需使用客户端付费下载</span>
+							<span class="close"></span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="singleComment" style="width: 789px;overflow: hidden;">
+			<div id="commentArea">
+				<p class="title_">评论 </p>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
+	<script type="text/javascript" src="js/singles.js" ></script>
+</html>
