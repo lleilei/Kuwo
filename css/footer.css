@@ -1,0 +1,89 @@
+.flink{
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 13px;
+}
+.clearfix{
+	zoom: 1;
+}
+.flink .flinker .flinker_cor{
+	float: left;
+	font-size: 16px;
+	color: #4c544c;
+}
+.flink .flinker .flinker_qq{
+	float: right;
+	font-size: 13px;
+	color: #4c454c;
+}
+.flinks a{
+	font-size: 12px;
+	line-height: 30px;
+	margin-right: 10px;
+	color: #1c67ac;
+}
+#loadBlock{
+	display: none;
+	position: fixed;
+	left: 50%;
+	width: 400px;
+	height: 200px;
+	margin-left: -200px;
+	margin-top: -100px;
+	background: url(../img/loadBlock2.png) no-repeat;
+	z-index: 500;
+}
+.loadBlock p{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	text-align: center;
+	color: rgb(51,51,51);
+	line-height: 16px;
+	margin-top: 66px;
+}
+.loadBlock .loadBlockClose{
+	position: absolute;
+	right: 9px;
+	top: 9px;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+}
+.loadBlock .loadBtn{
+	display: block;
+	margin: 33px 0 0 140px;
+	width: 120px;
+	height: 40px;
+	cursor: pointer;
+}
+.loadShadow, .loginShadow{
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	opacity: .3;
+	z-index: 3;
+}
+#footer{
+	height: 180px;
+	background: #181818;
+	padding-bottom: 75px;
+}
+.footer{
+	width: 1200px;
+	margin: 0 auto;
+	color: #999;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 34px;
+}
+.footer a, .footer p{
+	color: #999;
+}
+.footer .f_link{
+	color: #333;
+}
