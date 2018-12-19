@@ -4,11 +4,6 @@
 a{
 	color: #fff;
 }
-#banner{
-	height: 750px;
-	position: relative;
-	overflow: hidden;
-}
 #banner #tabLeft{
 	left: 0;
 }
@@ -37,25 +32,38 @@ a{
 #tabRight span{
 	background: url(../img/right40.png);
 }
-#banner ul{
-	position: absolute;
-}
-#banner ul li{
-	float: left;
-	position: relative;
-	cursor: pointer;
-}
-#banner .small ul li img.bannerItem{
-	width: 1366px;
-	height: 600px;
-}
-#banner ul li img{
-	position: relative;
-	left: 0;
-	width: 1920px;
-	height: 750px;
-}
-#banner ul li .splice{
+@keyframes  animate{
+			0%{left: 0px;}
+			12.5%{left: -1920px;}
+			25%{left: -3840px;}
+			37.5%{left: -5760px;}
+			50%{left: -7680px;}
+			62.5%{left: -9600px;}
+			75%{left: -8196px;}
+			87.5%{left: -9562px;}
+			100%{left: 0;}
+			
+		}
+            #banner{
+        		width: 1920px;
+        		height: 750px;
+        		position: relative;
+        		overflow: hidden;
+        	}
+        	#banner ul{
+        		width: 17280px;
+        		position: relative;
+        		left: 0;
+        		animation: animate 30s 2s linear infinite;
+        	}
+        	#banner ul li{
+        		float: left;
+        	}
+        	#banner ul li img{
+        		width: 1920px;
+        		height: 750px;
+        	}
+/*#banner ul li .splice{
 	width: 100%;
 	height: 100%;
 	background: #000;
@@ -116,7 +124,7 @@ a{
 	line-height: 80px;
 	font-size: 34px;
 	display: inline;
-}
+}*/
 #banner.small #point{
 	top: 560px;
 }
